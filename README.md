@@ -14,7 +14,6 @@ The picker provides:
 ![alt tag](https://github.com/meetnow/MNCountryPicker/blob/master/screen1.png)
 ![alt tag](https://github.com/meetnow/MNCountryPicker/blob/master/screen2.png)
 ![alt tag](https://github.com/meetnow/MNCountryPicker/blob/master/screen3.png)
-![alt tag](https://github.com/meetnow/MNCountryPicker/blob/master/screen4.png)
 
 * Note: current location is determined from the current region of the iPhone
 

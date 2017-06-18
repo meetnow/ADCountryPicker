@@ -75,8 +75,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="25" y="118"/>
         </scene>
-        <!--Pick Country-->
+        <!--Pick a Country-->
         <scene sceneID="Z8H-vM-v04">
             <objects>
                 <tableViewController id="B6l-6S-MwX" customClass="MNCountryPicker" customModule="MNCountryPicker" sceneMemberID="viewController">
@@ -108,7 +109,7 @@
                             <outlet property="delegate" destination="B6l-6S-MwX" id="Tv3-rl-Lid"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pick Country" id="Sgj-Ji-cad"/>
+                    <navigationItem key="navigationItem" title="Pick a Country" id="Sgj-Ji-cad"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="countryCellReuseIdentifier" value="my_country_cell"/>
                     </userDefinedRuntimeAttributes>
