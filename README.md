@@ -1,45 +1,49 @@
-# ADCountryPicker
+# MNCountryPicker
 
-ADCountryPicker is a country picker controller for iOS8+ with an option to search. The list of countries is based on the ISO 3166 country code standard (http://en.wikipedia.org/wiki/ISO_3166-1). Also and the library includes a set of 250 public domain flag images.
+MNCountryPicker is a country picker controller for iOS8+ with an option to search.
+The list of countries is based on the ISO 3166 country code standard
+(http://en.wikipedia.org/wiki/ISO_3166-1).
 
 The picker provides:
--   Country Names
--   Country codes - ISO 3166
--   International Dialing Codes
--   Flags
+- Country Names
+- Country codes - ISO 3166
+- International Dialing Codes
 
 ## Screenshots
 
-![alt tag](https://github.com/AmilaDiman/ADCountryPicker/blob/master/screen1.png) ![alt tag](https://github.com/AmilaDiman/ADCountryPicker/blob/master/screen2.png) ![alt tag](https://github.com/AmilaDiman/ADCountryPicker/blob/master/screen3.png)
-![alt tag](https://github.com/AmilaDiman/ADCountryPicker/blob/master/screen4.png)
+![alt tag](https://github.com/meetnow/MNCountryPicker/blob/master/screen1.png)
+![alt tag](https://github.com/meetnow/MNCountryPicker/blob/master/screen2.png)
+![alt tag](https://github.com/meetnow/MNCountryPicker/blob/master/screen3.png)
+![alt tag](https://github.com/meetnow/MNCountryPicker/blob/master/screen4.png)
 
-*Note: current location is determined from the current region of the iPhone
+* Note: current location is determined from the current region of the iPhone
 
 ## Installation
 
-ADCountryPicker is available through [CocoaPods](http://cocoapods.org), to install it simply add the following line to your Podfile:
+MNCountryPicker is available through [CocoaPods](http://cocoapods.org), to
+install it simply add the following line to your Podfile:
    
     use_frameworks!
-    pod 'ADCountryPicker'
+    pod 'MNCountryPicker'
 
-Push ADCountryPicker from UIViewController
+Push MNCountryPicker from UIViewController
 
 ```swift
 
-let picker = ADCountryPicker(style: .grouped)
+let picker = MNCountryPicker(style: .grouped)
 navigationController?.pushViewController(picker, animated: true)
 
 ```
-Present ADCountryPicker from UIViewController
+Present MNCountryPicker from UIViewController
 
 ```swift
 
-let picker = ADCountryPicker()
+let picker = MNCountryPicker()
   let pickerNavigationController = UINavigationController(rootViewController: picker)
   self.present(pickerNavigationController, animated: true, completion: nil)
 
 ```
-## ADCountryPicker properties
+## MNCountryPicker properties
 
 ```swift
 
@@ -49,9 +53,6 @@ picker.delegate = self
 /// Optionally, set this to display the country calling codes after the names
 picker.showCallingCodes = true
 
-/// Flag to indicate whether country flags should be shown on the picker. Defaults to true
-picker.showFlags = true
-    
 /// The nav bar title to show on picker view
 picker.pickerTitle = "Select a Country"
     
@@ -69,10 +70,7 @@ picker.closeButtonTintColor = UIColor.black
     
 /// The font of the country name list
 picker.font = UIFont(name: "Helvetica Neue", size: 15)
-    
-/// The height of the flags shown. Default to 40px
-picker.flagHeight = 40
-    
+
 /// Flag to indicate if the navigation bar should be hidden when search becomes active. Defaults to true
 picker.hidesNavigationBarWhenPresentingSearch = true
     
@@ -80,15 +78,15 @@ picker.hidesNavigationBarWhenPresentingSearch = true
 picker.searchBarBackgroundColor = UIColor.lightGray
 
 ```
-## ADCountryPickerDelegate protocol
+## MNCountryPickerDelegate protocol
 
 ```swift
 
-func countryPicker(picker: ADCountryPicker, didSelectCountryWithName name: String, code: String) {
+func countryPicker(picker: MNCountryPicker, didSelectCountryWithName name: String, code: String) {
         print(code)
 }
 
-func countryPicker(picker: ADCountryPicker, didSelectCountryWithName name: String, code: String, dialCode: String) {
+func countryPicker(picker: MNCountryPicker, didSelectCountryWithName name: String, code: String, dialCode: String) {
         print(dialCode)
 }
 ```
@@ -110,15 +108,20 @@ picker.didSelectCountryWithCallingCodeClosure = { name, code, dialCode in
 
 ## Author
 
+Patrick Schneider, patrick.schneider@meetnow.eu
+
+Original work by:
+
 Amila Dimantha, amilasumanasiri@hotmail.com
 
 Core based on work of @mustafaibrahim989
 
-Notes
-============
+## Notes
+
+Fork of [ADCountryPicker](https://github.com/AmilaDiman/ADCountryPicker)
 
 Designed for iOS 8+.
 
 ## License
 
-ADCountryPicker is available under the MIT license. See the LICENSE file for more info.
+MNCountryPicker is available under the MIT license. See the LICENSE file for more info.

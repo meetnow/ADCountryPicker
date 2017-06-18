@@ -1,0 +1,16 @@
+PODS:
+  - MNCountryPicker (1.1.0)
+
+DEPENDENCIES:
+  - MNCountryPicker (from `../`)
+
+EXTERNAL SOURCES:
+  MNCountryPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MNCountryPicker: 1dcca1eb859e1f287e93d2bea1b352168c067888
+
+PODFILE CHECKSUM: 990ff26f94be2f9051ae9882375974630cfd032b
+
+COCOAPODS: 1.2.1

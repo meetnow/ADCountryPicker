@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MNCountryPicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4r-3t-RYF">
+                                <rect key="frame" x="115.5" y="318.5" width="143" height="30"/>
+                                <state key="normal" title="Open Country Picker"/>
+                                <connections>
+                                    <segue destination="UnU-sC-XLM" kind="presentation" identifier="present_country_picker" id="zv9-Rh-U3k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Country:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkg-jK-o4D">
+                                <rect key="frame" x="118" y="368.5" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOz-Fg-8De">
+                                <rect key="frame" x="183" y="399.5" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi6-1D-KGB">
+                                <rect key="frame" x="183" y="430.5" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdW-n8-lkd">
+                                <rect key="frame" x="183" y="461.5" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XdW-n8-lkd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2M8-cO-PWd"/>
+                            <constraint firstItem="M4r-3t-RYF" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="39V-ng-JIb"/>
+                            <constraint firstItem="rOz-Fg-8De" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="MiH-Ks-iVT"/>
+                            <constraint firstItem="rOz-Fg-8De" firstAttribute="top" secondItem="jkg-jK-o4D" secondAttribute="bottom" constant="10" id="NSF-N8-KaZ"/>
+                            <constraint firstItem="jkg-jK-o4D" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="UqG-r4-qrr"/>
+                            <constraint firstItem="M4r-3t-RYF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ytg-bp-bCy"/>
+                            <constraint firstItem="Hi6-1D-KGB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="eDD-Li-nTa"/>
+                            <constraint firstItem="jkg-jK-o4D" firstAttribute="top" secondItem="M4r-3t-RYF" secondAttribute="bottom" constant="20" id="edJ-4l-A9O"/>
+                            <constraint firstItem="XdW-n8-lkd" firstAttribute="top" secondItem="Hi6-1D-KGB" secondAttribute="bottom" constant="10" id="nGw-Mu-lHq"/>
+                            <constraint firstItem="Hi6-1D-KGB" firstAttribute="top" secondItem="rOz-Fg-8De" secondAttribute="bottom" constant="10" id="qb7-vn-ZvZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryCodeLabel" destination="Hi6-1D-KGB" id="4ia-cT-FZo"/>
+                        <outlet property="countryDialCodeLabel" destination="XdW-n8-lkd" id="dla-tm-wJr"/>
+                        <outlet property="countryNameLabel" destination="rOz-Fg-8De" id="IjY-2e-JY1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Pick Country-->
+        <scene sceneID="Z8H-vM-v04">
+            <objects>
+                <tableViewController id="B6l-6S-MwX" customClass="MNCountryPicker" customModule="MNCountryPicker" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iEy-n7-V5W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="my_country_cell" textLabel="fEv-bG-Bmj" style="IBUITableViewCellStyleDefault" id="vj2-rd-dLh">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vj2-rd-dLh" id="bqa-dk-tZS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fEv-bG-Bmj">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="B6l-6S-MwX" id="VHs-0X-XSW"/>
+                            <outlet property="delegate" destination="B6l-6S-MwX" id="Tv3-rl-Lid"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Pick Country" id="Sgj-Ji-cad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="countryCellReuseIdentifier" value="my_country_cell"/>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Tg-B7-2i0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="851"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ahd-1i-FQb">
+            <objects>
+                <navigationController id="UnU-sC-XLM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yoe-4E-F3g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="B6l-6S-MwX" kind="relationship" relationship="rootViewController" id="OEB-lH-Rqr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8y-7h-jBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="851"/>
+        </scene>
+    </scenes>
+</document>
