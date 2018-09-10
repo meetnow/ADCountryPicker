@@ -11,7 +11,7 @@ import UIKit
 
 // Note: using a subclass of NSObject here to allow use with UILocalizedIndexedCollation
 public class MNCountry: NSObject {
-    let name: String
+    @objc let name: String
     let code: String
     var section: Int?
     let dialCode: String

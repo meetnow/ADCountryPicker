@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '8.3'
+platform :ios, '10.2'
 
 target 'MNCountryPicker_Example' do
   pod 'MNCountryPicker', :path => '../'
