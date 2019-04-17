@@ -1,5 +1,5 @@
 PODS:
-  - MNCountryPicker (1.1.0)
+  - MNCountryPicker (1.2.0)
 
 DEPENDENCIES:
   - MNCountryPicker (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MNCountryPicker: 58ce3d780eb23b69fed88681a16be1cb6ad97ba0
+  MNCountryPicker: b03614600f3428185596e55c3c36703b058ce99e
 
 PODFILE CHECKSUM: f5cb768450585139ef7691d2ea3cdec4adbfeded
 

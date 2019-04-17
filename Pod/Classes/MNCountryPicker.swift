@@ -215,9 +215,9 @@ open class MNCountryPicker: UITableViewController {
         
         self.sections.forEach { (section) -> () in
             section.countries.forEach({ (country) -> () in
-                if country.name.characters.count >= searchText.characters.count {
+                if country.name.count >= searchText.count {
                     let result = country.name.compare(searchText, options: [.caseInsensitive, .diacriticInsensitive],
-                                                      range: searchText.characters.startIndex ..< searchText.characters.endIndex)
+                                                      range: searchText.startIndex ..< searchText.endIndex)
                     if result == .orderedSame {
                         self.filteredList.append(country)
                     }
@@ -233,14 +233,14 @@ open class MNCountryPicker: UITableViewController {
 
 extension MNCountryPicker {
     override open func numberOfSections(in tableView: UITableView) -> Int {
-        if self.searchController.searchBar.text!.characters.count > 0 {
+        if self.searchController.searchBar.text!.count > 0 {
             return 1
         }
         return self.sections.count
     }
     
     override open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.searchController.searchBar.text!.characters.count > 0 {
+        if self.searchController.searchBar.text!.count > 0 {
             return self.filteredList.count
         }
         return self.sections[section].countries.count
@@ -263,7 +263,7 @@ extension MNCountryPicker {
         }
         
         let country: MNCountry!
-        if self.searchController.searchBar.text!.characters.count > 0 {
+        if self.searchController.searchBar.text!.count > 0 {
             country = self.filteredList[indexPath.row]
         }
         else {
@@ -282,7 +282,7 @@ extension MNCountryPicker {
     
     override open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if !self.sections[section].countries.isEmpty {
-            if self.searchController.searchBar.text!.characters.count > 0 {
+            if self.searchController.searchBar.text!.count > 0 {
                 if let name = self.filteredList.first?.name {
                     let index = name.index(name.startIndex, offsetBy: 0)
                     return String(describing: name[index])
@@ -326,7 +326,7 @@ extension MNCountryPicker {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let country: MNCountry!
-        if self.searchController.searchBar.text!.characters.count > 0 {
+        if self.searchController.searchBar.text!.count > 0 {
             country = self.filteredList[indexPath.row]
         }
         else {
