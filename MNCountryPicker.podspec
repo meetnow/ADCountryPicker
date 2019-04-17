@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'MNCountryPicker'
-  s.version      = '1.2.0'
+  s.version      = '1.3.0'
   s.summary      = 'MNCountryPicker is a swift country picker controller. Provides country name, ISO 3166 country codes, and calling codes'
   s.homepage     = 'https://github.com/meetnow/MNCountryPicker'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
